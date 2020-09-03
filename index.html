@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Form validation</title>
+  </head>
+  <body>
+  	<script src="validation.js"></script>
+
+  	<form action="somepage.html">
+  		first name:
+  		<input type="text" name="firstname">
+  		<br>
+  		Gender:
+  		<label for=""></label>
+  		Male:
+  		<input type="radio" name="gender" value="male">
+  		Female:
+  		<input type="radio" name="gender" value="female">
+  		<br>
+  		Hobbies:
+  		<br>
+  		<label for="hobby1">baseball</label>
+  		<input type="checkbox" name="hobby1" value="baseball">
+  		<label for="hobby2">basketball</label>
+  		<input type="checkbox" name="hobby2" value="basketball">
+  		<label for="hobby3">soccer</label>
+  		<input type="checkbox" name="hobby3" value="soccer">
+  		<br>
+  		Favorite show:
+  		<br>
+  		<select name="favoriteShow">
+  			<option value="">None</option>
+  			<option value="Family guy">Family guy</option>
+  			<option value="Breaking bad">Breaking bad</option>
+  			<option value="Courage the cowardly dog">Courage the cowardly dog</option>
+  		</select>
+  		<br>
+  		<label for=""></label>
+  		comments:
+  		<br>
+  		<textarea rows="10" cols="46" name="comments" required placeholder="enter comment"></textarea>
+  		<br>
+
+  		<button type="submit" onclick="return checkForm()">Submit</button>
+  	</form>
+
+  </body>
+</html>
